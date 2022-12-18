@@ -45,8 +45,8 @@ class BasePage:
 
     def make_screenshot(self):
         now = datetime.now()
-        name = now.strftime('screenshot_' + '%Y-%M-%d_%H-%M-%S' + '.png')
-        self.browser.save_screenshot('screen/' + name)
+        name = now.strftime('screenshot_' + '%Y-%m-%d_%H-%M-%S' + '.png')
+        self.browser.save_screenshot('project/screen/' + name)
 
     def mouse_move_to_element(self, locator):
         actions = ActionChains(self.browser)
